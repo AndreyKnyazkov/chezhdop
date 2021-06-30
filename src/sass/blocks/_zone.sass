@@ -1,0 +1,134 @@
+.zone
+  margin-top: 100px
+  margin-bottom: 250px
+  overflow: hidden
+  &-block
+    display: flex
+    justify-content: space-between
+    height: 747px
+    background: url('../img/background.jpg') center center
+    padding: 40px
+    position: relative    
+  &-desciprtion
+    &__item
+      margin-top: 20px
+      border: 1px solid #fff
+      border-radius: 10px
+      background: #B6C6FF
+      color: #515A7A
+      padding: 20px
+      width: 232px
+      height: 195px
+      cursor: pointer
+      &_purple
+        background: linear-gradient(129.06deg, #CEC1FA 0%, #E3BBF9 100%)
+      &_active
+        background: #FFFFFF
+        & .zone-desciprtion__item-count
+          background: #606C93
+          color: #fff
+      &-count
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 60px
+        height: 60px
+        background: #fff
+        font-weight: bold
+        font-size: 18px
+        border-radius: 10px
+      &-title
+        margin-top: 15px
+        font-weight: bold
+        font-size: 18px
+      &-description
+        margin-top: 5px
+  &-center
+    color: #fff
+    text-align: center
+    padding-top: 80px
+    &__dot
+      width: 13px
+      height: 13px
+      background: rgba(255, 255, 255, 0.1)
+      opacity: 0.49
+      border: 2px solid #FFFFFF
+      box-sizing: border-box
+      backdrop-filter: blur(30px)
+      border-radius: 50px
+      // &:hover
+      //   background: red
+      &-block
+        height: 0
+        &_active
+          & .zone-center__dot
+            background: #E9A4F8 
+      &s
+    &__description-mobile
+      display: none
+    &__uptitle
+      text-transform: uppercase
+      font-size: 16px
+    &__title
+      margin-top: 10px
+      font-size: 40px
+      line-height: 48px
+@media (max-width: 1200px)
+  .zone
+    &-block
+      justify-content: center
+    &-description
+      display: none
+    &-center
+      display: flex
+      flex-direction: column
+      &__dot
+        &-block
+          width: initial          
+      &__description-mobile
+        color: #515A7A
+        display: block
+        margin-top: auto
+        max-width: 500px
+        padding: 30px
+        background: rgba(255, 255, 255, 0.8)
+        box-shadow: -4px 4px 60px rgba(107, 127, 200, 0.6)
+        border-radius: 10px
+        line-height: 140%
+        position: absolute
+        bottom: 15px
+        left: 15px
+        right: 15px
+        &__title
+          font-size: 18px
+          font-weight: bold
+        &__subtitle
+          margin-top: 5px
+          font-size: 16px
+@media (max-width: 768px)
+  .zone
+    &-center
+      &__description-mobile
+        padding: 15px
+@media (max-width: 550px)
+  .zone
+    &-center
+      padding-top: 30px
+      &__title
+        line-height: 130%
+        font-size: 30px
+      &__uptitle
+        font-size: 14px
+    &-block
+      background: url('../img/background-mobile.jpg') 54%
+      height: 654px
+      padding: 15px
+      border-radius: 12px
+    &-center
+      &__description-mobile
+        padding: 15px
+        &__title
+          font-size: 16px
+        &__subtitle
+          font-size: 12px
+          

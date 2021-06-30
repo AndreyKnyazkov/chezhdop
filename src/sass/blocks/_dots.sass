@@ -1,0 +1,75 @@
+.zone-center
+  &s
+    width: auto
+  &__dot
+    width: auto
+    cursor: pointer
+    padding: 0
+    margin: 0
+    width: 13px
+    height: 13px
+    &_1
+      transform: translate(157px, 202px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(-27px, 0px)
+      & .zone-center__dot:nth-child(2)
+        transform: translate(26px, -13px)
+      & .zone-center__dot:nth-child(3)
+        transform: translate(0px, 0px)
+    &_2
+      transform: translate(156px, 103px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(54px, 42px)
+      & .zone-center__dot:nth-child(2)
+        transform: translate(27px, 34px)
+      & .zone-center__dot:nth-child(3)
+            transform: translate(-53px, 15px)
+      & .zone-center__dot:nth-child(4)
+        transform: translate(-26px, 8px)
+      & .zone-center__dot:nth-child(5)
+        transform: translate(0px, 0px)
+    &_3
+      transform: translate(222px, 266px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(0px, 0px)
+      & .zone-center__dot:nth-child(2)
+        transform: translate(-26px, -17px)
+      & .zone-center__dot:nth-child(3)
+        transform: translate(26px, -36px)
+    &_4
+      transform: translate(157px, 332px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(3px, 4px)
+      & .zone-center__dot:nth-child(2)
+        transform: translate(-26px, -18px)
+      & .zone-center__dot:nth-child(3)
+        transform: translate(31px, -32px)
+    &_5
+      transform: translate(77px, 303px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(-8px, -20px)
+      & .zone-center__dot:nth-child(2)
+        transform: translate(-2px, -4px)
+      & .zone-center__dot:nth-child(3)
+        transform: translate(11px, 12px)
+    &_6
+      transform: translate(157px, 395px)
+      & .zone-center__dot:nth-child(1)
+        transform: translate(0px, 0px)
+@media (max-width: 550px)
+  .zone-center
+    &__dot
+      &s
+        margin-top: 110px
+      &_1
+        transform: translate(46%, 93px)
+      &_2
+        transform: translate(47%, 1px)
+      &_3
+        transform: translate(72%, 155px)
+      &_4
+        transform: translate(45%, 214px)
+      &_5
+        transform: translate(16%, 192px)
+      &_6
+        transform: translate(46%, 274px)

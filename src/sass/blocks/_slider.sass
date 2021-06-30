@@ -1,0 +1,111 @@
+.lift
+  margin-top: 60px
+  &-arrows-mobile
+    display: none
+  &-title
+    &__title
+      margin-top: 10px
+      font-size: 40px
+      line-height: 48px
+      max-width: 500px
+      text-align: center
+      margin: auto
+      font-weight: bold        
+    &__uptitle
+      text-transform: uppercase
+      color: #F3A8CC
+      text-align: center
+      font-weight: bold   
+  &-slider
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    &__button
+      margin-top: 50px
+      img
+        cursor: pointer
+        border-radius: 60px
+    &_small
+      display: flex
+      flex-direction: column
+      text-align: center
+      img
+        max-width: 260px
+    &_big
+      position: relative
+    &__image
+      &_small
+        margin-top: auto 
+        background: radial-gradient(118.17% 118.17% at 51.54% 52%, rgba(200, 62, 116, 0.7) 0%, rgba(255, 255, 255, 0.39) 96.19%), #FFFFFF
+        display: flex
+        justify-content: center
+        border-radius: 500px 500px 0px 0px
+        img
+          max-width: 180px
+      &_big
+        width: 450px
+    &__description
+      position: absolute
+      bottom: 0
+      text-align: center
+      background: rgba(255, 255, 255, 0.35)
+      backdrop-filter: blur(10px)
+      border-radius: 10px
+      padding-top: 40px
+      padding-right: 30px
+      padding-left: 30px
+      padding-bottom: 20px
+      margin: 30px
+      border-radius: 10px
+    &__title
+      font-weight: bold
+      font-size: 20px
+      line-height: 140%
+    &__subtitle
+      margin-top: 7px
+      font-size: 18px
+      line-height: 140%
+@media (max-width: 1200px)
+  .lift
+    &-arrows-mobile
+      display: flex
+      justify-content: center
+      img
+        width: 180px
+        margin: 10px
+    &-slider
+      justify-content: center
+      &_small
+        display: none
+@media (max-width: 768px)
+  .lift
+    &-title
+      &__title
+        font-size: 30px
+        line-height: 100%
+      &__uptitle
+        letter-spacing: 2px
+        font-size: 14px
+    &-slider
+      &__title
+        font-size: 14px
+        line-height: 130%
+      &__subtitle
+        font-size: 12px
+      &__description
+        margin: 15px
+@media (max-width: 550px)
+  .lift
+    &-arrows-mobile
+      img
+        width: 47%
+        justify-content: space-between
+    &-slider
+      &__image
+        &_big
+          width: 100%
+      &__description
+        padding-top: 25px
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 15px
