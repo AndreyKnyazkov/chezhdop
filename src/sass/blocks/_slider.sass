@@ -29,6 +29,7 @@
       display: flex
       flex-direction: column
       text-align: center
+      width: 23%
       img
         max-width: 260px
     &_big
@@ -41,9 +42,9 @@
         justify-content: center
         border-radius: 500px 500px 0px 0px
         img
-          max-width: 180px
+          max-width: 195px
       &_big
-        width: 450px
+        width: 500px
         background: linear-gradient(147.33deg, #DDDBF4 -0.27%, rgba(230, 76, 154, 0.57) 70.27%, rgba(235, 100, 149, 0.18) 127.99%);
         border-radius: 500px 500px 0px 0px
         display: flex
@@ -60,6 +61,15 @@
       padding-bottom: 20px
       margin: 30px
       border-radius: 10px
+      &-img
+        &-pc
+          position: absolute
+          margin: auto
+          left: 0
+          right: 0
+          top: -30px
+        &-mobile
+          display: none
     &__title
       font-weight: bold
       font-size: 20px
@@ -97,6 +107,16 @@
         font-size: 12px
       &__description
         margin: 15px
+        &-img
+          &-pc
+            display: none
+          &-mobile
+            display: initial
+            position: absolute
+            left: 0
+            right: 0
+            margin: auto
+            top: -21px
 @media (max-width: 550px)
   .lift
     &-arrows-mobile
