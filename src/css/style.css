@@ -1527,6 +1527,11 @@ a:visited {
 
 .lift-slider__image_big {
   width: 450px;
+  background: linear-gradient(147.33deg, #DDDBF4 -0.27%, rgba(230, 76, 154, 0.57) 70.27%, rgba(235, 100, 149, 0.18) 127.99%);
+  border-radius: 500px 500px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .lift-slider__description {
