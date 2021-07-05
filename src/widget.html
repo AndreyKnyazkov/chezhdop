@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <div id="pm-widget-1594926228431">
+     <!-- Виджет - платежный агрегатор -->
+     <script src="https://paymaster.ru/widget/widget.bundle.js"></script>
+     <script>
+       var PM_WIDGET_CONFIG_1594926228431 =
+         /* начало конфигурации виджета */
+         {
+           "version": "1.0",
+           "invoice": {
+             "description": "Перевод, нотариальное заверение, апостиль, легализация",
+             "amount": 0,
+             "payerPhone": "",
+             "merchantId": "d275e8a4-9a5b-4fb7-baa5-315366c95f43"
+           },
+           "paymentForm": {
+             "title": "Покупка в интернет магазине",
+             "value": {
+               "description": {
+                 "type": "textarea",
+                 "label": "Наименование товара",
+                 "access": "required"
+               },
+               "id": {
+                 "type": "input",
+                 "label": "Ваши фамилия, имя, отчество",
+                 "placeholder": "Иванов Николай Сергеевич",
+                 "access": "required"
+               },
+               "amount": {
+                 "type": "money",
+                 "label": "Сумма оплаты",
+                 "placeholder": "100"
+               },
+               "payerEmail": {
+                 "type": "email"
+               },
+               "payerPhone": {
+                 "type": "phone",
+                 "label": "Контактный телефон"
+               },
+               "merchantId": {
+                 "type": "input"
+               }
+             }
+           },
+           "payment": {
+             "title": null,
+             "submitText": "Купить",
+             "allowExternal": true,
+             "methods": ["bankcard", "wmr", "wmp", "sberbankonline", "alfabank", "vtb24", "rsb", "psb", "svyaznoy",
+               "russianpost"
+             ]
+           }
+         }
+       /* конец конфигурации виджета */
+       var widget_1594926228431 = new PayMasterWidget();
+       widget_1594926228431.mount('pm-widget-1594926228431', PM_WIDGET_CONFIG_1594926228431);
+     </script>
+
+
+   </div>
+
+</body>
+</html>

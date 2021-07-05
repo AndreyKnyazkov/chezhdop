@@ -33,6 +33,14 @@ function slider() {
   let sliderCurrent = 1  
 
   arrowRight.forEach((item, i) => item.addEventListener('click', (e) => {
+    document.querySelector('.lift-slider__2 .slider-item').classList.add('fade-in')
+    
+
+    setTimeout(() => {
+      document.querySelector('.lift-slider__2 .slider-item').classList.remove('fade-in')
+    }, 500)
+
+    console.log('click')
     sliderCurrent++
     // console.log('sliderCurrent: ', sliderCurrent)
     // console.log('sliderLength: ', sliderLength);
