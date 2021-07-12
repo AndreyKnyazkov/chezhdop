@@ -49,7 +49,7 @@ function slider() {
     }
     sliderItems.forEach((sliderItem, i) => {      
       if (i === 0) {
-        sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent}.png`)
+        sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent}.jpg`)
       } else if (i === 1) {
         // if current slide like slide length then
         if (sliderLength - sliderCurrent === 0) {
@@ -62,9 +62,9 @@ function slider() {
         }
       } else if (i === 2) {
         if (sliderLength - sliderCurrent === 1) {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - sliderCurrent}.png`)
+          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - sliderCurrent}.jpg`)
         } else {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent + 2}.png`)        
+          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent + 2}.jpg`)        
         }
       }  
     })
@@ -80,12 +80,12 @@ function slider() {
     sliderItems.forEach((sliderItem, i) => {
       if (i === 0) {
         if (sliderCurrent === sliderLength) {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - 1}.png`)
+          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - 1}.jpg`)
           sliderCurrent = sliderLength - 1
         } else if (sliderCurrent === 0) {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderLength}.png`)
+          sliderItem.setAttribute('src', `./img/small-one_${sliderLength}.jpg`)
         } else {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent}.png`)
+          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent}.jpg`)
         }
       } else if (i === 1) {
         // if current slide like slide length then
@@ -98,9 +98,9 @@ function slider() {
         }
       } else if (i === 2) {
         if (sliderLength - sliderCurrent === 1) {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - sliderCurrent}.png`)          
+          sliderItem.setAttribute('src', `./img/small-one_${sliderLength - sliderCurrent}.jpg`)          
         } else {
-          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent + 2}.png`)
+          sliderItem.setAttribute('src', `./img/small-one_${sliderCurrent + 2}.jpg`)
         }
       }
     })
