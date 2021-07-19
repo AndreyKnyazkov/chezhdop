@@ -28,7 +28,6 @@ function slider() {
     ['Nosoretní rýhy', 'Obecně se předpokládá, že obličej je ovlivněn věkem, ale se mohou také tvořit u relativně mladých lidí v důsledku genetické předispozice nebo příliš živé mimiky obličeje.'],
     ['Spadlé koutky rtů, „vrásky smutku“', 'Koutky rtů dávají tváři výraz smutku, který vyvolává pocity bezmocnosti a tendence stěžovat si. Po 35–40 letech jsou již podobné změny jasně viditelné.'],
     ['Korekce lícních kostí podle pohlaví', 'Mužská krása má své individuální vlastnosti, takže se obrací na kosmetologa, silná polovina lidstva se bojí zženštelých změn vzhledu.'],
-    
   ]
   const sliderLength = sliderText.length
   let sliderCurrent = 1  
