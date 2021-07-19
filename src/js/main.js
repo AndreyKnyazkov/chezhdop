@@ -22,12 +22,13 @@ sliderArrow(arrowLeft, 'mouseout', './img/arrow-left.svg')
 function slider() {
   const sliderItems = document.querySelectorAll('.slider-item')
   const sliderText = [
-    ['Описание 1', 'На этом модальном окошке будет отображаться текст-описание'],
-    ['Описание 2', 'На этом модальном окошке будет отображаться текст-описание'],
-    ['Описание 3', 'На этом модальном окошке будет отображаться текст-описание'],
-    ['Описание 4', 'На этом модальном окошке будет отображаться текст-описание'],
-    ['Описание 5', 'На этом модальном окошке будет отображаться текст-описание'],
-    ['Описание 6', 'На этом модальном окошке будет отображаться текст-описание'],
+    ['Lícní kosti', 'Zvednuté rysy budí dojem mladé tváře. V průběhu času tělo spouští involuční procesy, které ovlivňují měkké tkáně a kosti. Proto je nutné komplexně obnovit struktury obličeje a správné tvary.'],
+    ['Ztráta jasnosti rysů obličeje', 'S věkem se vlivem gravitace měkké tkáně postupně klesají dolů, pokožka ztrácí pružnost a rám se stává méně definovaným. '],
+    ['Odstranění vrásek a záhybů na krku', 'Krk je jedním z těch důkazů mládí, které nelze udržovat pomocí cvičení nebo krémů. Je to on, kdo odhaluje náš skutečný věk.'],
+    ['Nosoretní rýhy', 'Obecně se předpokládá, že obličej je ovlivněn věkem, ale se mohou také tvořit u relativně mladých lidí v důsledku genetické předispozice nebo příliš živé mimiky obličeje.'],
+    ['Spadlé koutky rtů, „vrásky smutku“', 'Koutky rtů dávají tváři výraz smutku, který vyvolává pocity bezmocnosti a tendence stěžovat si. Po 35–40 letech jsou již podobné změny jasně viditelné.'],
+    ['Korekce lícních kostí podle pohlaví', 'Mužská krása má své individuální vlastnosti, takže se obrací na kosmetologa, silná polovina lidstva se bojí zženštelých změn vzhledu.'],
+    
   ]
   const sliderLength = sliderText.length
   let sliderCurrent = 1  
