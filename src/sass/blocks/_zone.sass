@@ -66,6 +66,7 @@
           & .zone-center__dot
             background: #d40fff
       &s
+        transform: translate(-13px, 56px)
     &__description-mobile
       display: none
     &__uptitle
@@ -75,6 +76,9 @@
       margin-top: 10px
       font-size: 40px
       line-height: 48px
+      position: absolute
+      transform: translateX(-14%)
+      width: 400px
 @media (max-width: 1200px)
   .zone
     &-block
@@ -89,7 +93,6 @@
           width: initial          
       &__description-mobile
         color: #515A7A
-        display: block
         margin-top: auto
         max-width: 500px
         padding: 30px
@@ -101,6 +104,9 @@
         bottom: 15px
         left: 15px
         right: 15px
+        margin: auto
+        &_active
+          display: block
         &__title
           font-size: 18px
           font-weight: bold
@@ -127,6 +133,13 @@
       padding: 15px
       border-radius: 12px
     &-center
+      &__title
+        width: initial
+        transform: initial
+        left: 0
+      &__dot
+        &s
+          transform: translate(4px, 48px)
       &__description-mobile
         padding: 15px
         &__title
