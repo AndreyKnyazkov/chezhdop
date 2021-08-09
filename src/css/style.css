@@ -1877,6 +1877,9 @@ a:visited {
   .zone-center__title {
     line-height: 130%;
     font-size: 30px;
+    left: 0;
+    right: 0;
+    top: 60px;
   }
   .zone-center__uptitle {
     font-size: 14px;
